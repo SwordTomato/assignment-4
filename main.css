@@ -1,0 +1,147 @@
+body{
+    background-color: rgba(24, 24, 180, 0.486);
+}
+
+.grid-container {
+	display: grid;
+    grid-template-columns: auto 30% 40%;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+	border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    background-color:white;
+}
+
+#header{
+	grid-column: 1 / span 3;
+}
+
+#main1{
+	grid-column: 1 / span 1;
+	text-align: left;
+}
+
+#main2{
+	grid-column: 2 / span 2;
+}
+
+#right{
+	grid-column: 1 / span 3;
+}
+
+#footer{
+	grid-column: 1 / span 3;
+}
+
+h1, h2{
+    background-color:lightblue;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+#des {
+	padding-left: 30px;
+	text-align: left;
+}
+
+#for {
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+img {
+	width:80%;
+}
+
+.image {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 5px;
+	justify-content: center;
+	justify-items: center;
+	padding-top: 10px;
+}
+
+.image2 {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap: 5px;
+	justify-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+	}
+	.grid-container > div{
+		border: 1px solid black;
+		font-size: 15px;
+		text-align: center;
+		background-color:white;
+		padding-bottom: 10px;
+	}
+
+	#for {
+		font-weight: bold;
+		font-size: 15pt;
+	}
+
+	.image2 {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 5px;
+		justify-items: center;
+	}
+
+	#footer{
+		grid-column: 2 / span 1;
+	}
+	#right{
+		grid-column: 1 / span 1;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+			display: grid;
+			grid-template-columns: auto;
+			grid-gap: 10px;
+
+		 
+	}
+	.grid-container > div{
+		border: 1px solid black;
+		font-size: 10px;
+		text-align: center;
+		background-color:white;
+	}
+
+	#for {
+		font-weight: bold;
+		font-size: 10pt;
+	}
+
+	#header{
+		grid-column: 1 / span 3;
+	}
+	
+	#main1{
+		grid-column: 1 / span 3;
+	}
+	
+	#main2{
+		grid-column: 1 / span 3;
+	}
+	
+	#right{
+		grid-column: 1 / span 3;
+	}
+	
+	#footer{
+		grid-column: 1 / span 3;
+	}
+}
